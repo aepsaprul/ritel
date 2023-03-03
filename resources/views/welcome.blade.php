@@ -8,8 +8,18 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world! <i class="fa fa-home"></i>
-  </h1>
+  <div class="bg-orange-500 w-full h-12">
+    <div class="flex justify-between items-center">
+      <div class="h-12 p-1">
+        <img src="{{ asset('assets/logo.png') }}" alt="logo" class="w-10 h-10">
+      </div>
+      <div>
+        <input type="text" name="cari" id="cari" class="p-1 rounded">
+      </div>
+      <div class="px-2"><i class="fa fa-shopping-cart"></i></div>
+      <div class="px-2"><i class="fa fa-bell"></i></div>
+      <div class="px-2"><i class="fa fa-bars"></i></div>
+    </div>
+  </div>
 </body>
 </html>
